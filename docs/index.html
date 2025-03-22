@@ -464,7 +464,7 @@
                         // Wait for transaction
                         await tx.wait();
                         showStatus(
-                            `Owner add operation initialized. If this is the first approval, it needs ${requiredSignatures - 1} more approvals.`,
+                            `Owner add operation initialized. If this is the first approval, it needs ${Number(requiredSignatures) - 1} more approvals.`,
                             'success',
                             'add-owner-status'
                         );
@@ -497,7 +497,7 @@
                         // Wait for transaction
                         await tx.wait();
                         showStatus(
-                            `Owner removal operation initialized. If this is the first approval, it needs ${requiredSignatures - 1} more approvals.`,
+                            `Owner removal operation initialized. If this is the first approval, it needs ${Number(requiredSignatures) - 1} more approvals.`,
                             'success',
                             'remove-owner-status'
                         );
@@ -537,7 +537,7 @@
                         // Wait for transaction
                         await tx.wait();
                         showStatus(
-                            `Transaction execution initialized. If this is the first approval, it needs ${requiredSignatures - 1} more approvals.`,
+                            `Transaction execution initialized. If this is the first approval, it needs ${Number(requiredSignatures) - 1} more approvals.`,
                             'success',
                             'execute-tx-status'
                         );
